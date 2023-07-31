@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: fuchsia;
 }
 
@@ -13,6 +13,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  position: fixed;
   width: 100%;
   height: 50px;
   background-color: red;
@@ -38,7 +39,12 @@
 }
 
 #footer {
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: grey;
   width: 100%;
   height: 40px;
 }

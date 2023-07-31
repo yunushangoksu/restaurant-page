@@ -27,7 +27,7 @@ const config = {
     rules: [
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset",
+        use: ["file-loader"],
       },
       {
         test: /\.css$/i,
