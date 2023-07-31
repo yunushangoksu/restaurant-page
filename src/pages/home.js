@@ -1,5 +1,5 @@
 import "../styles/home.css";
-
+import chefImage from "../images/chef.png";
 const home = () => {
   const contentScreen = document.querySelector("#contentScreen");
 
@@ -14,7 +14,7 @@ const home = () => {
   homeCard.innerHTML = `
   <p>Best pizza in your country</p>
   <p>Made with passion since 1908</p>
-  <img width='300' height='300'>
+  <img width='300' height='300' href='${chefImage}'>
   <p>Order online or visit us!</p>
   `;
   home.appendChild(homeCard);

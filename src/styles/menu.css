@@ -11,12 +11,14 @@
 }
 
 .menuCard {
+  font-family: "Montserrat", sans-serif;
   display: flex;
+  border: solid black 3px;
+  border-radius: 7px;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 15px;
-  background-color: aqua;
   width: 230px;
   height: 330px;
   font-weight: bolder;

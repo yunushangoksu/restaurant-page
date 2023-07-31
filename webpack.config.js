@@ -3,7 +3,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
-
+const CopyPlugin = require("copy-webpack-plugin");
 const isProduction = process.env.NODE_ENV == "production";
 
 const config = {
@@ -19,19 +19,23 @@ const config = {
     new HtmlWebpackPlugin({
       template: "index.html",
     }),
-
-    // Add your plugins here
-    // Learn more about plugins from https://webpack.js.org/configuration/plugins/
+    /*     new CopyPlugin({
+      patterns: [{ from: "src/public", to: "dist" }],
+    }), */
   ],
   module: {
     rules: [
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        use: ["file-loader"],
+        type: "asset/resource",
       },
       {
         test: /\.css$/i,
         use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /\.(jpe?g|png|svg)$/,
+        use: ["file-loader"],
       },
 
       // Add your rules for custom modules here

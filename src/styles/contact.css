@@ -9,11 +9,11 @@
 }
 
 #contactCard {
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   gap: 30px;
   align-items: center;
-  background-color: aqua;
   font-weight: bolder;
 }
