@@ -1,9 +1,13 @@
 const landingPage = () => {
-  console.log("works");
   const body = document.querySelector("#content");
-  let yazi = document.createElement("p");
-  yazi.textContent = "Yunushan";
-  body.appendChild(yazi);
+
+  const topRow = document.createElement("div");
+  topRow.textContent = "annen";
+  body.appendChild(topRow);
+  const homeButton = document.createElement("div");
+  const menuButton = document.createElement("div");
+  const contactButton = document.createElement("div");
+  topRow.appendChild(homeButton, menuButton, contactButton);
 };
 
 export default landingPage;
