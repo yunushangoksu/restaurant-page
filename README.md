@@ -1,15 +1,10 @@
-# 🚀 Welcome to your new awesome project!
+# Restaurant Page 
 
-This project has been created using **webpack-cli**, you can now run
+Simple restaurant page built with using DOM Manipulation and bundled with webpack.
 
-```
-npm run build
-```
+## Built With 
 
-or
-
-```
-yarn build
-```
-
-to bundle your application
+- Vanilla JS
+- HTML5
+- CSS3
+- Webpack 5
