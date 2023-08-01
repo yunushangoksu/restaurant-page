@@ -1,5 +1,5 @@
 import "../styles/contact.css";
-
+import restaurantLocation from "../assets/restaurant-location.png";
 const contact = () => {
   const contentScreen = document.querySelector("#contentScreen");
 
@@ -14,9 +14,11 @@ const contact = () => {
   contactCard.innerHTML = `
   <p>📞 123 456 789</p>
   <p>🏠 Hollywood Boulevard 42, Los Angeles, USA</p>
-  <img width='600' height='400'>
+  <img width='600' height='400' id='location'>
   `;
   contact.appendChild(contactCard);
+  const locationImg = document.querySelector("#location");
+  locationImg.src = restaurantLocation;
 };
 
 export default contact;

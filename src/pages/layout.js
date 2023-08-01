@@ -1,4 +1,5 @@
 import "../styles/layout.css";
+import gitLogo from "../assets/github-mark-white.svg";
 
 const layout = () => {
   const body = document.querySelector("#content");
@@ -38,8 +39,16 @@ const layout = () => {
 
   const footer = document.createElement("div");
   footer.setAttribute("id", "footer");
-  footer.textContent = "Yunushan Göksu";
+  const gitLink = document.createElement("a");
+  gitLink.textContent = "Yunushan Göksu";
+  gitLink.setAttribute("href", "https://github.com/yunushangoksu");
+  gitLink.setAttribute("id", "gitLink");
+  const githubLogo = document.createElement("img");
+  githubLogo.setAttribute("id", "gitLogo");
+  githubLogo.src = gitLogo;
   body.appendChild(footer);
+  footer.appendChild(gitLink);
+  footer.appendChild(githubLogo);
 };
 
 export default layout;
