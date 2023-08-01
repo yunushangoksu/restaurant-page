@@ -2,7 +2,7 @@
 
 Simple restaurant page build with DOM manipulation bundled with webpack.
 
-[Live Demo 👉](https://restaurant-page-f2ef.vercel.app/)
+[Live Demo 👈](https://restaurant-page-f2ef.vercel.app/)
 
 ## Built With
 
